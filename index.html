@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Planner</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+    <h1>My Personal Task Planner </h1>
+    <p>Plan your day,one task at a time!</p>
+
+    <div class="task-card">
+    <h2>Today's Tasks</h2>
+
+    
+
+<div class="task-input">
+    <input type="text" id="taskInput"
+           placeholder="Enter your task">
+
+    <input type="date" id="taskDate"
+           aria-label="Task due date">
+
+    <select id="taskPriority" aria-label="Task priority">
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+        <option value="Low">Low Priority</option>
+    </select>
+
+    <button id="addTaskBtn">Add Task</button>
+</div>
+
+
+   <div class="task-stats">
+       <div class="stat-card">
+        <h3>Total Tasks</h3>
+        <p id="totalTasks">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+    </div>
+</div>
+
+<ul id="taskList">
+    <li>Learn HTML basics</li>
+    <li>Practice Python</li>
+    <li>Build my first project</li>
+    <li>Make an idea for my next project</li>
+</ul>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
